@@ -241,11 +241,6 @@ body{
     border: none;
 }
 
-.btn-close{
-    opacity: 1;
-    font-size: 20px;
-    color: white;
-}
 
 
 
@@ -411,7 +406,7 @@ body{
 }
 
 #accord{
-    box-shadow: 0 5px 4px 4px rgba(0, 0, 0, .4)
+    box-shadow: 0 5px 4px 4px rgba(0, 0, 0, .1)
 }
 
 
@@ -715,10 +710,6 @@ body{
         margin-bottom: auto !important;
         border: none;
         box-shadow: none !important;
-    }
-
-    #telegram-icon{
-        font-size: 5.2em;
     }
 
     .intro-1{
