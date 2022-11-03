@@ -99,29 +99,20 @@
                     <div class="video-cont">
                         <img src="/img/Coding _Monochromatic.png" alt="" class="img-fluid">
 
-                        <a href="" class="play-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button href="" class="play-btn" id="openModal">
                             <span class="pulse"><i class="fa fa-play-circle" aria-hidden="true"></i></span>
 
                             <span class="border-animate animate-1"><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
 
                             <span class="border-animate animate-2"><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
-                        </a>
+                        </button>
                         
 
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="youtube-btn">
-                                        <iframe class="youtube" id="music" src="https://www.youtube.com/embed/jfMHA8SqUL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                
-                              </div>
+                        <div class="rat" id="videoModal">
+                            <button class="closeBtn" id="closeYut"><i class="fa fa-times" aria-hidden="true"></i></button>
+                
+                            <div class="my-yut">
+                                <iframe id="video" class="youtube-play" src="https://www.youtube.com/embed/-qfEOE4vtxE?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                           
