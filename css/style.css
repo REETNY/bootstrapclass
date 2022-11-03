@@ -637,7 +637,9 @@ body{
         font-size: 40px;
     }
 
-
+    .cloud{
+        margin-top: 45px;
+    }
 
     .divider{
         border: none;
