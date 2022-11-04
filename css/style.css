@@ -651,12 +651,23 @@ body{
     #moore{
         margin-bottom: 3em;
     }
+    
+    .our-serve{
+        font-size: 29.5px;
+    }
 
+    .protocol{
+        font-size: 27px;
+    }
 
 
     .form-head{
         font-size: 32px;
         line-height: 37px;
+    }
+
+    .last-name{
+        margin-top: 12px;
     }
 
     .to-top{
