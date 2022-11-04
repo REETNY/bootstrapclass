@@ -4,12 +4,24 @@ var openModal = document.getElementById("openModal"); // get the open modal butt
 
 var closeBtn = document.getElementsByClassName("closeBtn")[0];  // get the close modal button
 
+
+//lets the video auto play on open-modal button
+
+function playVideo(){
+  var video = document.getElementById("video");
+  var src = video.dataset.src;
+
+  video.src = src + '?autoplay=1'
+}
+
+
+
 // listen for open click
 openModal.addEventListener('click', Modalopen);
 
 //function fo Modalopen
 function Modalopen(){
-    modal.style.display = 'flex'
+    modal.style.display = 'flex';
 }
 
 // listen for close click
@@ -54,3 +66,8 @@ var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+
+

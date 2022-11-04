@@ -254,6 +254,10 @@ body{
 
 /* section 2 */
 
+.my-trustee{
+    font-size: 32.5px;
+}
+
 .underline{
     height: fit-content;
 }
@@ -654,6 +658,10 @@ body{
     
     .our-serve{
         font-size: 29.5px;
+    }
+
+    .my-trustee{
+        font-size: 30px;
     }
 
     .protocol{
