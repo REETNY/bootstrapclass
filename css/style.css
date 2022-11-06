@@ -673,7 +673,7 @@ body{
     }
 
     .faq{
-        font-size: 30px;
+        font-size: 28.5px;
     }
 
     .protocol{
@@ -730,6 +730,17 @@ body{
 
 }
 
+@media only screen and (min-width: 551px) and (max-width: 950px){
+
+    .faq{
+        font-size: 42px;
+    }
+
+
+}
+
+
+
 @media only screen and (max-width: 950px){
 
     .intro-1{
@@ -762,10 +773,6 @@ body{
     .youtube-play{
         width: 100%;
         height: 100%;
-    }
-
-    .faq{
-        font-size: 42px;
     }
 
 }
