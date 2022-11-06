@@ -22,7 +22,7 @@ openModal.addEventListener('click', Modalopen);
 //function fo Modalopen
 function Modalopen(){
     modal.style.transform = 'translateY(+0vh)'
-    modal.style.transition = 'transform 2s ease'
+    modal.style.transition = 'transform 1.5s ease'
 }
 
 // listen for close click
@@ -31,7 +31,7 @@ closeBtn.addEventListener('click', Modalclose);
 //function fo Modalopen
 function Modalclose(){
   modal.style.transform = 'translateY(100vh)'
-  modal.style.transition = 'transform 2s ease'
+  modal.style.transition = 'transform 1.5s ease'
 }
 
 
