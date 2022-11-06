@@ -217,7 +217,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: auto;
-    transform: translateY(100vw);
+    transform: translateY(100vh);
     transition: all 2s;
 }
 
