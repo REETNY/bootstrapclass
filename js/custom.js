@@ -4,6 +4,17 @@ var openModal = document.getElementById("openModal"); // get the open modal butt
 
 var closeBtn = document.getElementsByClassName("closeBtn")[0];  // get the close modal button
 
+var turn = document.getElementById("rotate"); // get the hanburger menu
+
+
+// to turn hamburger menu 90deg
+turn.addEventListener('click', navRotate);
+
+function navRotate(){
+  turn.classList.toggle("turn");
+}
+
+
 
 //lets the video auto play on open-modal button
 
@@ -68,8 +79,6 @@ var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
 
 
 
