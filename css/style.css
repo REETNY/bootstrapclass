@@ -171,8 +171,12 @@ body{
 }
 
 .border-animate i{
-    font-size: 112px;
+    font-size: 100px;
     color: white;
+}
+
+.animate-1{
+    animation: pulse2 1.5s linear infinite;
 }
 
 
@@ -193,6 +197,19 @@ body{
     opacity: .3;
     }
 }
+
+@keyframes pulse2{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+    transform: scale(1);
+    opacity: .8;
+    }
+}
+
 
 
 /* pop up video */
