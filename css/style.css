@@ -648,7 +648,7 @@ body{
         color: transparent !important;
         border: none;
         transform: rotate(0deg);
-        transition: transform 0.6s linear;
+        transition: transform 0.3s linear;
     }
 
     .turn{
@@ -772,7 +772,7 @@ body{
         color: transparent !important;
         border: none;
         transform: rotate(0deg);
-        transition: transform 0.6s linear;
+        transition: transform 0.3s linear;
     }
 
     .turn{
