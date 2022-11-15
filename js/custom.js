@@ -32,8 +32,9 @@ openModal.addEventListener('click', Modalopen);
 
 //function fo Modalopen
 function Modalopen(){
-    modal.style.transform = 'translateY(+0vh)'
+    modal.style.transform = 'translateX(+0vw)'
     modal.style.transition = 'transform 1.5s ease'
+    document.body.style.overflowY = "hidden"
 }
 
 // listen for close click
@@ -41,8 +42,9 @@ closeBtn.addEventListener('click', Modalclose);
 
 //function fo Modalopen
 function Modalclose(){
-  modal.style.transform = 'translateY(100vh)'
+  modal.style.transform = 'translateX(-100vw)'
   modal.style.transition = 'transform 1.5s ease'
+  document.body.style.overflowY = "auto"
 }
 
 
