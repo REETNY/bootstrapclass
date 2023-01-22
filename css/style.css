@@ -499,6 +499,26 @@ body{
     opacity: 1;
 }
 
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.centered .pro-name{
+    width: 90%;
+    max-width: 90%;
+    text-align: center;
+    line-height: 18px;
+}
+
+.centered div a {
+    color: gold;
+    text-decoration: none;
+}
+
 #shadow{
     margin-bottom: 1.5em;
 }
@@ -782,7 +802,7 @@ body{
 
 
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1010px){
 
     .intro-1{
         font-size: 17px;
