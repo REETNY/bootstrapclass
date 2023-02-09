@@ -1,26 +1,29 @@
-var modal = document.getElementById("videoModal");  // get the modal
+const modal = document.getElementById("videoModal");  // get the modal
 
-var openModal = document.getElementById("openModal"); // get the open modal button
+const openModal = document.getElementById("openModal"); // get the open modal button
 
-var closeBtn = document.getElementsByClassName("closeBtn")[0];  // get the close modal button
+const closeBtn = document.getElementsByClassName("closeBtn")[0];  // get the close modal button
 
-var turn = document.getElementById("rotate"); // get the hanburger menu
+const turnModal = document.querySelector("#rotate"); // get the hanburger menu
 
+const currentYear = document.querySelector(".year");
+
+let year = new Date().getFullYear();
+currentYear.textContent = `${year}`
 
 // to turn hamburger menu 90deg
-turn.addEventListener('click', navRotate);
+turnModal.addEventListener('click', navRotate);
 
 function navRotate(){
-  turn.classList.toggle("turn");
+  turnModal.classList.toggle("turn");
 }
-
 
 
 //lets the video auto play on open-modal button
 
 function playVideo(){
-  var video = document.getElementById("video");
-  var src = video.dataset.src;
+  let video = document.getElementById("video");
+  let src = video.dataset.src;
 
   video.src = src + '?autoplay=1'
 }
@@ -53,8 +56,8 @@ function Modalclose(){
 
 // https://developers.google.com/youtube/iframe_api_reference
 
-// global variable for the player
-var player;
+// global letiable for the player
+let player;
 
 // this function gets called when API is ready to use
 function onYouTubePlayerAPIReady() {
@@ -70,17 +73,14 @@ function onYouTubePlayerAPIReady() {
 function onPlayerReady(event) {
   // bind events
 
-  var pauseButton = document.getElementById("closeYut");
+  let pauseButton = document.getElementById("closeYut");
   pauseButton.addEventListener("click", function () {
     player.stopVideo();
   });
 }
 
 // Inject YouTube API script
-var tag = document.createElement("script");
+let tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
+let firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-
